@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//WW3C//DTD HTML 4.1 Transitional//EN">
+<html>
+  <head>
+    <title>Schulbildung Mikka Elyas Pauli</title>
+    <meta name="AUTHOR" content="Mikka Elyas Pauli" />
+    <meta name="COPYRIGHT" content="COPYRIGHT (c) 2024 by Mikka Elyas Pauli" />
+    <meta name="ROBOTS" content="INDEX, FOLLOW" />
+    <meta
+      name="DSCRIPTIONS"
+      content="Dies ist die Bewerbungshomepage von Mikka Elyas Pauli"/>
+    <meta
+      name="KEYWORDS"
+      content="Bewerbungshomepage, Mikka Elyas Pauli, Bewerbung"/>
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="width=device-width, initial-scale=1"/>
+    <meta name="viewreport" content="width=device-width, initial-scale=1" />
+    <!--import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!--import the webpage's stylesheet -->
+    <script src="/script.js" defer></script>
+    <!-- Einbindung der Javascript-Bibliothek JQUERY von GOOGLE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Load the element definition for markdown-->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+  </head>
+  <body
+    onload="setTimeout(function() {setActiveMenu('#main_menu_item_daen');}, 1000);"
+  >
+    <div id="kopfbereich"></div>
+    <!-- Ende kopfbereich -->
+    <div id="navibereich"></div>
+    <!--Ende navibereich -->
+    <div id="textbereich">
+      <div class="content-block"> 
+
+      <zero-md src="content-index.md"> 
+
+        <template> 
+
+        <!-- Load external stylesheets with a `<link rel="stylesheet">` tag --> 
+
+         <link rel="stylesheet" href="/markdown-style.css" /> 
+
+        </template> 
+
+      </zero-md> 
+
+      </div><!-- Ende content-block --> 
+      <zero-md src="content-daten.md">
+        <template>
+          <!-- Load external stylesheets with a `<link rel="stylesheet">` tag -->
+          <link rel="stylesheet" href="/markdown-style.css" />
+        </template>
+      </zero-md>
+      <p>dies ist meine website</p>
+    </div>
+    <!-- Ende textbereich -->
+
+    <div id="newsbereich"></div>
+    <!-- Ende newsbereich -->
+
+    <div id="fussbereich"></div>
+    <!-- Ende fussbereich -->
+    <script>
+      $(window).on("load", function () {
+        load_content("navibereich", "content-navi.html");
+        load_content("newsbereich", "content-news.html");
+        load_content("fussbereich", "content-footer.html");
+        load_content("kopfbereich", "content-header.html");
+      });
+    </script>
+  </body>
+</html>

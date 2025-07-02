@@ -1,0 +1,145 @@
+/* ----------------------------------*/
+/* Markdowns                         */
+/* --------------------------------  */
+.markdown-body p {
+font-style:normal;
+font-weight:normal;
+color:#000000;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.markdown-body a {
+  background-color: initial;
+}
+.markdown-body img {
+  border-style: none;
+  width:100%;
+  max-width:400px;
+  float:left;
+  padding:10px;
+}
+.markdown-body a {
+  color: #00008B;
+  font-size: 110%;
+  text-decoration: none;
+   font-weight: bold;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body strong {
+  font-weight: bold;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.markdown-body h1 {
+  font-size: 150%;
+}
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: bold;
+}
+.markdown-body h2 {
+  font-size: 140%;
+}
+.markdown-body h3 {
+   font-size: 130%;
+}
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: bold;
+}
+.markdown-body h4 {
+  font-size: 120%;
+}
+.markdown-body h5 {
+ font-size: 110%;
+}
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: bold;
+}
+.markdown-body h6 {
+  font-size: 100%;;
+}
+.markdown-body hr {
+  color: black !important;
+  box-shadow: 1px 1px grey, 2px 2px grey, 3px 3px grey; ! Festlegung des Text-Shadows (Schatten);
+}
+.markdown-body pre,
+.markdown-body code {
+  border-radius: 3px !important;
+  font-family: monospace, "IBM Plex Mono", monospace;
+  font-size: 20px;
+}
+.markdown-body code {
+  background-color: yellow;
+}
+.markdown-body blockquote {
+  border-left: 10px solid yellow;
+  padding-left: 20px;
+  font-size:95%;
+}
+.markdown-body table {
+  /* Remove spacing between table cells (from Normalize.css) */
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb;
+}
+.markdown-body table th {
+  color: #000;
+  background-color: #e0e0e0;
+  font-style: italic;
+  padding: 2px 0;
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 110%;
+}
+.markdown-body table td,
+.markdown-body table th {
+  border-left: 1px solid #cbcbcb; /*  inner column border */
+  border-width: 0 0 0 1px;
+  margin: 0;
+  overflow: visible; /*to make ths where the title is really long work*/
+  padding: 0.5em 1em; /* cell padding */
+}
+.markdown-body table td {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+/* Image rechtsbündig                    */
+img[src$='#img-right'] {
+  float:right;
+}
+/* Image linksbündig                    */
+img[src$='#img-left'] {
+  float:left;
+}
+/* kein Float                    */
+img[src$='#img-no-float'] {
+  float:none;
+}
+/* kleines Bild                    */
+img[src$='#img-small'] {
+  max-width:300px;
+}
+/* Noch kleineres Bild für Blog       */
+img[src$='#img-blog'] {
+  max-width:150px;
+}
+
+/* Anpassungen für den Blog    */
+img[src$='#img-blog'] {
+  max-width:100px;
+}
+
+
